@@ -1,7 +1,8 @@
-package com.marina.hammersystems
+package com.marina.hammersystems.presentation.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.marina.hammersystems.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
