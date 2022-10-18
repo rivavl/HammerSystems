@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_product"
+        android:layout_width="@dimen/product_dim"
+        android:layout_height="@dimen/product_dim"
+        android:layout_marginVertical="@dimen/common_margin"
+        android:layout_marginStart="@dimen/common_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@color/dark_text" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        style="@style/Text.Bold.16"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="@dimen/common_margin"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        app:layout_constraintStart_toEndOf="@id/iv_product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_product"
+        tools:text="Ветчина и грибы" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_description"
+        style="@style/Text.SF_UI_Display.14.Light"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:layout_marginEnd="@dimen/common_margin"
+        app:layout_constraintBottom_toTopOf="@id/price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="Ветчина,шампиньоны, увеличинная порция моцареллы, томатный соус" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/price"
+        style="@style/Text.SF_UI_Display.13.Active"
+        android:layout_width="87dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/common_margin"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:backgroundTint="@color/bg_color"
+        app:chipCornerRadius="6dp"
+        app:chipStrokeColor="@color/active_text"
+        app:chipStrokeWidth="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_description"
+        tools:text="от 345 р" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
