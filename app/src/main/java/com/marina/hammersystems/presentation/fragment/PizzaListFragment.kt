@@ -90,8 +90,6 @@ class PizzaListFragment : Fragment(R.layout.fragment_pizza_list) {
                 else -> {}
             }
         }
-
-
     }
 
     private fun showSnackbar(info: String) {
